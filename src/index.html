@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-	<meta name="title" content="CNPolitics政见编辑考试｜媒体敏感测试｜政见｜微信">
-	<meta name="description" content="CNPolitics政见编辑考试｜媒体敏感测试｜政见｜微信">
-    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
-    <meta name="format-detection" content="telephone=no" />
+	<meta name="title" content="CNPolitics政见｜可道｜微信">
+	<meta name="description" content="CNPolitics政见｜可道｜微信">
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" >
+    <meta name="format-detection" content="telephone=no" >
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
 	
-    <title>新媒体主编资格考试</title>
+    <title>测测你的绿商有多高</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/jquery.mmenu.all.css" rel="stylesheet" />
     <link href="css/background-style.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="css/default.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	
-	<script src="js/modernizr.custom.js"></script>
+    <link href="css/animation.css" rel="stylesheet">
+    
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.hammer.min.js"></script>
@@ -25,18 +24,6 @@
     <script type="text/javascript" src="js/quiz.js"></script>
     <script type="text/javascript" src="js/wechat.js"></script>
     <script type="text/javascript" src="js/wxm-core.js"></script> 
-    		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
-		<script src="js/classie.js"></script>
-		<script src="js/modalEffects.js"></script>
-
-		<!-- for the blur effect -->
-		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-		<script>
-			// this is important for IEs
-			var polyfilter_scriptpath = '/js/';
-		</script>
-		<script src="js/cssParser.js"></script>
-		<script src="js/css-filters-polyfill.js"></script>
 </head>
 <body id="test1" class="test1">
 	<div class="wechat-thumb">
@@ -56,15 +43,14 @@
         <div class="text-center header">
             <hr style="border:0;background-color:#cee6f7;height:4px;"  width="90%">
             <h1 style="color:#000000; " class="bold">
-                你有潜质<br>
-				成为政见主编吗？
+                测测你的绿商有多高
 			</h1>
             <hr style="border:0;background-color:#cee6f7;height:4px;" width="90%">  
             </div>
             
             <!-- E header -->
             <div id="bd" class="panel">
-                <div id="panel1" class="panel-body">
+                <div id="panel1" class="panel-body front-page">
                     <form action="#">
 
                     <div style="position: relative; top: -35px;height:55px; color:#000000; background:#c8eefa;MARGIN-RIGHT: auto; MARGIN-LEFT: auto; width:50%;" > 
@@ -77,20 +63,16 @@
                             <img src="asserts/box.png"></span> </a>
                     </div>
                     <p style="position: relative; top: -10px;">
-                        本测试共8道题，每一题的选项都是2014-2015年间政见在微信公号上发布的文章标题。
-                        <br>
-                        你的任务是，选择出几个选项中，实际获得的点击量最高的那一篇文章。看看你是否有眼力识别出更“爆款”的那一篇吧！
+                        智商、情商，都过时了，在这个环境污染愈发严重，雾霾封锁城市，毒地、毒水频现的时代，最重要的是“绿商”——也就是你对环保知识的了解程度。
                     </p>
                     <div class="buttons" >
                         <a href="#result" class="btn btn-lg btn-success" style="background:#c7edfa; width: 50%" onclick="return next(0);">
                             <strong style="color:#404243;font-size: 22px;">开始测试</strong></a>
                             
                     </div>
-                    <button class="md-trigger" data-modal="modal-4">Newspaper</button>
                     <br>
                     <p>
-                    	说明：感谢新榜(newrank.cn)为政见团队提供点击量数据。为了更公平地比较文章的点击量，
-                    	这些文章在推送时都是头条，而且已经排除了具体发送日期的影响，请仅从标题传达的内容和吸引人程度考虑答案。
+                    	快来测测你的绿商有多高吧。本测试由专注可持续发展话题的可道（微信号：kedaogreenpath）和专注知识普及的政见（微信号：cnpolitics2011）联合推出。
                     </p>
                     </form>
            </div>
@@ -104,192 +86,269 @@
                         <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
                     </div>
                     
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
+                     <h3 style="color:#000;"> PM2.5主要来源是什么呢？ </h3>
                     
                    
                     <ul class="list-group  js_group">
                         <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1A" />
-                            A.一张图读懂中国经济“新常态”</li>
+                            <input name="g" type="radio" class="" value="0A" />
+                            A.车辆尾气</li>
                         <li class="list-group-item" onclick="return toggle(this);">
                             <input name="g" type="radio" class="" value="0B" />
-                            B.热点解读｜卢布危机：俄罗斯经济之踵</li>
-                    </ul>
-                    </form>
-                </div>
-            	<div class="md-modal md-effect-4" id="modal-4">
-					<div class="md-content">
-					<h3>Modal Dialog</h3>
-					<div>
-						<p>This is a modal window. You can do the following things with it:</p>
-						<ul>
-							<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-							<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-							<li><strong>Close:</strong> click on the button below to close the modal.</li>
-						</ul>
-						<button class="md-close">Close me!</button>
-					</div>
-				</div>
-				</div>
-                <!-- E panel-body -->
-                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
-                    <a name="result" href="javascript:void(0)"></a>
-                    <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
-                    </div>
-                    
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
-                    
-                         <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0A" />
-                            A.男人天生比女人更有竞争性？看看行为经济学家怎么说！ </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1B" />
-                            B.如果男人有月经</li>
-                    </ul>
-                    </form>
-                </div>
-                <!-- E panel-body -->
-                 <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
-                    <a name="result" href="javascript:void(0)"></a>
-                    <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
-                    </div>
-                    
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
-                    
-                         <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1A" />
-                            A.美国高校怎么教“马克思主义原理”？（内附课程大纲） </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0B" />
-                            B.2015美国社会学博士申请总结 </li>
-                    </ul>
-                    </form>
-                </div>
-                <!-- E panel-body -->
-                  <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
-                    <a name="result" href="javascript:void(0)"></a>
-                    <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
-                    </div>
-                    
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
-                    
-                          <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0A" />
-                            A.恐怖主义、伊斯兰教和身份认同 </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1B" />
-                            B.穆斯林在日本过得咋样？ </li>
-                    </ul>
-                    </form>
-                </div>
-                <!-- E panel-body -->
-                  <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
-                    <a name="result" href="javascript:void(0)"></a>
-                    <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
-                    </div>
-                    
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
-                    
-                          <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0A" />
-                            A.清朝政府是任人唯贤还是任人唯亲？ </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1B" />
-                            B.中国公务员工资真相与治理难题 </li>
+                            B.工业燃煤</li>
                         <li class="list-group-item" onclick="return toggle(this);">
                             <input name="g" type="radio" class="" value="0C" />
-                            C.政府官员广开言路的条件 </li>
-                    </ul>
-                    </form>
-                </div>
-                <!-- E panel-body -->
-                <!-- E panel-body -->
-                 <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
-                    <a name="result" href="javascript:void(0)"></a>
-                    <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
-                    </div>
-                    
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
-                    
-                          <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1A" />
-                            A.民主就像幸福的婚姻：过了七年之痒，自会益久弥坚 </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0B" />
-                            B.千禧世代与东亚民主的未来 </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0C" />
-                            C.民主政府和权威政府分别如何分配自己的注意力 </li>
-                    </ul>
-                    </form>
-                </div>
-                <!-- E panel-body -->
-                <!-- E panel-body -->
-                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
-                    <a name="result" href="javascript:void(0)"></a>
-                    <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
-                    </div>
-                    
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
-                    
-                           <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0A" />
-                            A.游戏中的政治 </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1B" />
-                            B.玩游戏也是正经事：12款政治类游戏推介及玩家测评 </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0C" />
-                            C.听觉动物的福利：15个你一定爱听的社科思想类博客 </li>
-                    </ul>
-                    </form>
-                </div>
-                <!-- E panel-body -->
-                <!-- E panel-body -->
-                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
-                    <a name="result" href="javascript:void(0)"></a>
-                    <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
-                    </div>
-                    
-                     <h3 style="color:#000;"> 以下哪篇文章获得的点击量更高？ </h3>
-                    
-                             <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0A" />
-                            A.“理性选民”是个神话吗？ </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0B" />
-                            B.因为有了经济学，人类才变得理性？ </li>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0C" />
-                            C.离理性太远，离偏见太近：我们为什么排斥移民 </li>
+                            C.爆炒煎炸</li>
                         <li class="list-group-item" onclick="return toggle(this);">
                             <input name="g" type="radio" class="" value="1D" />
-                            D.经济学家终于承认：人不总是理性的 </li>
+                            D.各地来源都不同</li>
                     </ul>
                     </form>
                 </div>
+            	<div style="display:none;" class="popup-box" id="popup-box1">
+					<div>
+						<p>D。PM2.5来源可以各不相同。如2014年北京市PM2.5源自机动车的比例最高；
+								上海则是流动源（机动车、船舶、飞机、非道路移动机械等）成为首要污染源；
+								广州机动车尾气的贡献率仅次于工业源。
+						<p>
+						<button class="popup-btn" onclick="return showNext(this);" value="1">下一题</button>
+					</div>
+				</div>
+                <!-- Question End -->
                 
+                <!-- E panel-body -->
+                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
+                    <form style="background:#fbfcf7;" action="#" method="POST">
+                    <a name="result" href="javascript:void(0)"></a>
+                    <div>
+                        <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
+                    </div>
+                    
+                     <h3 style="color:#000;"> 以下哪项不是质疑特斯拉等电动汽车是否环保的原因呢？ </h3>
+                    
+                   
+                    <ul class="list-group  js_group">
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0A" />
+                            A. 较高的氮氧化物排放</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="1B" />
+                            B. 较高的颗粒物排放</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0C" />
+                            C. 电力属于二次能源，需依赖煤炭、水力等一次能源获取</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0D" />
+                            D. 电池回收处理不当会造成环境污染</li>
+                    </ul>
+                    </form>
+                </div>
+            	<div style="display:none;" class="popup-box" id="popup-box1">
+					<div>
+						<p>B. 特斯拉产生了较高的氮氧化物排放和较低的颗粒物排放，
+							而中国的传统燃油车在氮氧化物和颗粒物两项上都有更高的排放，
+							这方面特斯拉优于传统燃油车。
+						</p>
+						<button class="popup-btn" onclick="return showNext(this);" value="2">下一题</button>
+					</div>
+				</div>
+                <!-- Question End -->
+                
+                <!-- E panel-body -->
+                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
+                    <form style="background:#fbfcf7;" action="#" method="POST">
+                    <a name="result" href="javascript:void(0)"></a>
+                    <div>
+                        <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
+                    </div>
+                    
+                     <h3 style="color:#000;"> 环保领域中的PPP指的是什么呢？ </h3>
+                    
+                   
+                    <ul class="list-group  js_group">
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0A" />
+                            A. 嗯...是PM2.5的小伙伴吗？</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="1B" />
+                            B. 是一种公私合营金融手段呢</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0C" />
+                            C. 是大数据事实污染监测</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0D" />
+                            D. 是现在流行的跨太平洋贸易协定</li>
+                    </ul>
+                    </form>
+                </div>
+            	<div style="display:none;" class="popup-box" id="popup-box1">
+					<div>
+						<p>B。PPP指政府公共部门与民营部门合作过程中，
+						让非公共部门所掌握的资源参与提供公共产品和服务，
+						从而实现政府公共部门的职能并同时也为民营部门带来利益。
+						</p>
+						<button class="popup-btn" onclick="return showNext(this);" value="3">下一题</button>
+					</div>
+				</div>
+                <!-- Question End -->
+                
+                <!-- E panel-body -->
+                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
+                    <form style="background:#fbfcf7;" action="#" method="POST">
+                    <a name="result" href="javascript:void(0)"></a>
+                    <div>
+                        <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
+                    </div>
+                    
+                     <h3 style="color:#000;"> 碳中和指的是？ </h3>
+                    
+                   
+                    <ul class="list-group  js_group">
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0A" />
+                            A. CO2总排放量为0</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="1B" />
+                            B. 酸性碳排放物与碱性碳排放物中和</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0C" />
+                            C. 碳排放的成本降低至0</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0D" />
+                            D. 公司CO2的排放预算与处理预算相等</li>
+                    </ul>
+                    </form>
+                </div>
+            	<div style="display:none;" class="popup-box" id="popup-box1">
+					<div>
+						<p>A。"碳中和"指使得总的二氧化碳排放量为零，
+						即在一个单位运营过程中燃烧的化石燃料产生多少碳，
+						就用可行的措施抵消（吸收）这么多的碳。
+						</p>
+						<button class="popup-btn" onclick="return showNext(this);" value="4">下一题</button>
+					</div>
+				</div>
+                <!-- Question End -->
+                
+                                <!-- E panel-body -->
+                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
+                    <form style="background:#fbfcf7;" action="#" method="POST">
+                    <a name="result" href="javascript:void(0)"></a>
+                    <div>
+                        <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
+                    </div>
+                    
+                     <h3 style="color:#000;"> 问：地球过冲日指的是 </h3>
+                    
+                   
+                    <ul class="list-group  js_group">
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0A" />
+                            A. 处女座的黄道吉日</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="1B" />
+                            B. 太阳和月球相互作用力引起的当日地球自转轻微偏转</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0C" />
+                            C.​人类对资源的索取超出本年度生态可承载指标的日子</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0D" />
+                            D. 以联合国为主导的全球生态保护倡议日</li>
+                    </ul>
+                    </form>
+                </div>
+            	<div style="display:none;" class="popup-box" id="popup-box1">
+					<div>
+						<p>C。将地球的生态资源比作一笔定期存款，工业化以来，
+						人们逐渐不满足于利息，开始透支本金。
+						地球过冲日即人类对资源的索取超出本年度生态可承载指标的日子​。
+						</p>
+						<button class="popup-btn" onclick="return showNext(this);" value="5">下一题</button>
+					</div>
+				</div>
+                <!-- Question End -->
+                
+                                
+                                <!-- E panel-body -->
+                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
+                    <form style="background:#fbfcf7;" action="#" method="POST">
+                    <a name="result" href="javascript:void(0)"></a>
+                    <div>
+                        <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
+                    </div>
+                    
+                     <h3 style="color:#000;">对于热衷买买买的小伙伴们来说，最能实践绿色购物的方式是购买 </h3>
+                    
+                   
+                    <ul class="list-group  js_group">
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0A" />
+                            A. 大包装的商品</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="1B" />
+                            B. 小包装的商品</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0C" />
+                            C. 一次性用品</li>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0D" />
+                            D. 附带广告宣传材料的商品</li>
+                    </ul>
+                    </form>
+                </div>
+            	<div style="display:none;" class="popup-box" id="popup-box1">
+					<div>
+						<p>A。商品包装的制作过程会大量消耗能源并产生相应的环境压力，尤其是过度包装。
+						我国包装废弃物的年排放量在重量上已占城市固体废弃物的1/3，而在体积上更达到1/2 之多，
+						且排放量以每年10％的惊人速度递增。
+						</p>
+						<button class="popup-btn" onclick="return showNext(this);" value="6">下一题</button>
+					</div>
+				</div>
+                <!-- Question End -->
+                
+                                                <!-- E panel-body -->
+                <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
+                    <form style="background:#fbfcf7;" action="#" method="POST">
+                    <a name="result" href="javascript:void(0)"></a>
+                    <div>
+                        <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
+                    </div>
+                    
+                     <h3 style="color:#000;">今年的新闻普利策奖的赢家揭露了缅甸“鱼奴”的悲惨遭遇，
+                     从环保角度讲，远洋渔业可能对环境会造成什么危害呢？（此题为多选题） </h3>
+                    
+                   
+                    <ul class="list-group  js_group">
+                        <li class="list-group-item" onclick="selected(this);">
+                            <input name="g" type="radio" class="" value="0A" />
+                            A. 过度捕捞</li>
+                        <li class="list-group-item" onclick="selected(this);">
+                            <input name="g" type="radio" class="" value="1B" />
+                            B. 生物多样性减弱、物种资源衰退</li>
+                        <li class="list-group-item" onclick="selected(this);">
+                            <input name="g" type="radio" class="" value="0C" />
+                            C. 近海水母泛滥成灾</li>
+                        <li class="list-group-item" onclick="selected(this);">
+                            <input name="g" type="radio" class="" value="0D" />
+                            D. 废弃物污染、威胁水质安全</li>
+                        <br>
+                        <li class="list-group-item" onclick="return toggle(this);">
+                            <input name="g" type="radio" class="" value="0D" />
+                            确认</li>
+                    </ul>
+                    </form>
+                </div>
+            	<div style="display:none;" class="popup-box" id="popup-box1">
+					<div>
+						<p>A, B, D。过度捕捞、生物多样性减弱、物种资源衰退、
+						废弃物污染和水质安全的降低都是远洋渔业可能造成的环境威胁。
+						“东海无鱼”的水域荒漠化现象并不是危言耸听。
+						</p>
+						<button class="popup-btn" onclick="return showNext(this);" value="7">下一题</button>
+					</div>
+				</div>
+                <!-- Question End -->
                 <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
                     <form id="collector" style="background:#fbfcf7;" action="#" method="POST">
                     <a name="result" href="javascript:void(0)"></a>

@@ -1,18 +1,9 @@
-var total = 11;
-var fullScore = 8;
+var total = 8;
+var fullScore = 7;
 var tScore = 0;
 var record = 0;
 var quizRec = "";
-var e;
-var $se;
-
-var dataForWeixin={
-    img:    "http://g.3gunman.com/fangyan/20140725ywh1200.jpg",
-    url:    "http://cnpolitics.org",
-    title:  "我在政见编辑考试中得了 ",
-    desc:   "2016政见编辑考试",
-};
-
+var temp;
 function next(t){
     $("div#bd > div.panel-body").hide();
     $("div.js_answer").eq(t).show();
@@ -20,7 +11,6 @@ function next(t){
     gotoTop();
 }
 function result(t){
-    share_pop("open",10000);
     $("div#bd > div.panel-body").hide();
     
     $("div.js_result").eq(fullScore - t).show();
@@ -28,9 +18,24 @@ function result(t){
 	gotoTop();
 }
 
+function showAnswer(t){
+	$("div#bd > div.panel-body").hide();
+	$("div.popup-box")[t].style.removeProperty("display");
+	$("div.popup-box").eq(t).addClass('appearAnimation');
+	gotoTop();
+}
+function selected(t){
+	    $(t).children("input").attr("checked","checked");
+  		$("li.list-group-item").removeClass('active');
+}
+function showNext(t){
+    $("div#bd > div.panel-body").hide();
+    $("div.popup-box").hide();
+	var index= t.value;
+	next(index);
+}
+
 function push(){
-    $se = $("#collector");
-    e = $se.serialize();
     // Variable to hold request
 	var request;
 
@@ -44,11 +49,11 @@ function push(){
     var $form = $("#collector");
 
     $('<input />').attr('type', 'hidden')
-          .attr('name', "Mark")
+          .attr('name', "Total")
           .attr('value', tScore)
           .appendTo($form);
           
-    for (i=1;i<9; i++){
+    for (i=1;i<11; i++){
     
       $('<input />').attr('type', 'hidden')
           .attr('name', "A"+i)
@@ -58,7 +63,7 @@ function push(){
     
     // Let's select and cache all the fields
     var $inputs = $form.find("input, select, button, textarea");
-
+	temp = $form;
     // Serialize the data in the form
     var serializedData = $form.serialize();
 
@@ -67,9 +72,9 @@ function push(){
     // Disabled form elements will not be serialized.
     $inputs.prop("disabled", true);
 
-    // Fire off the request to post.php
+    // Fire off the request to /form.php
     request = $.ajax({
-        url: "http://zwen668.com/demo/post.php",
+        url: "http://zwen668.com/git/foolsDayQuiz/src/php/post.php",
         type: "post",
         data: serializedData
     });
@@ -103,13 +108,26 @@ function push(){
 function toggle(t){
 	var child =  $(t).children("input");
 	if (child.length == 0){
-		push();
-		modifyTitle(tScore);
-		result(tScore);
-	}else {
+		var gender = document.getElementsByName("Gender")[0].value;
+		var faculty = document.getElementsByName("Faculty")[0].value;
+		var age = document.getElementsByName("Age")[0].value;
+		if (gender == "" | faculty =="" | age == ""){
+			alert("看结果前，请完善您的个人信息");
+		}else {
+			push();
 		
+			//Hard coded maximum,please do not try to hack it 
+			if (tScore > 10 ) {
+				tScore = 10
+			}
+			
+			modifyTitle(tScore);
+			result(tScore);
+		}
+	
+	}else {
     	$(t).children("input").attr("checked","checked");
-  		$("li.list-group-item").removeClass('active')
+  		$("li.list-group-item").removeClass('active');
     	var rt = $(t).children("input:checked").val();
     	var score = rt.match(/\d+/)[0];
       	tScore  = parseInt(tScore) + parseInt(score);
@@ -119,12 +137,16 @@ function toggle(t){
    		$(t).addClass('active');
     	var t = $("div.js_answer").index($(t).parents("div.js_answer")) + 1;
     	if(t == total){
+        	push();
+		    modifyTitle(tScore);
         	result(tScore);
     	}else{
-        	setTimeout(function(){next(t);},500);
+    		temp =t;
+        	setTimeout(function(){showAnswer(temp - 1);},500);
     	}
     }
 }
+
 function gotoTop(){
     $("body,html").animate({scrollTop:($("#header").offset().top + $("#header").height())}, 1000);
 }
