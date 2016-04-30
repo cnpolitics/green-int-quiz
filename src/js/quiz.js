@@ -1,9 +1,11 @@
-var total = 8;
+var total = 7;
 var fullScore = 7;
 var tScore = 0;
 var record = 0;
 var quizRec = "";
+var mulRec = "";
 var temp;
+
 function next(t){
     $("div#bd > div.panel-body").hide();
     $("div.js_answer").eq(t).show();
@@ -24,6 +26,7 @@ function showAnswer(t){
 	$("div.popup-box").eq(t).addClass('appearAnimation');
 	gotoTop();
 }
+
 function selected(t){
 	    $(t).children("input").attr("checked","checked");
   		$("li.list-group-item").removeClass('active');
@@ -53,14 +56,18 @@ function push(){
           .attr('value', tScore)
           .appendTo($form);
           
-    for (i=1;i<11; i++){
+    for (i=1;i<7; i++){
     
       $('<input />').attr('type', 'hidden')
           .attr('name', "A"+i)
           .attr('value', quizRec[i-1])
           .appendTo($form); 
     }
-    
+    $('<input />').attr('type', 'hidden')
+          .attr('name', "A7")
+          .attr('value', mulRec)
+          .appendTo($form); 
+          
     // Let's select and cache all the fields
     var $inputs = $form.find("input, select, button, textarea");
 	temp = $form;
@@ -105,9 +112,24 @@ function push(){
     event.preventDefault();
 }
 
+
 function toggle(t){
 	var child =  $(t).children("input");
-	if (child.length == 0){
+	temp = t;
+	if (t.type == "submit" && t.value != ""){
+		
+		var size = $("input:checkbox:checked").size();
+		for (i=0; i<size;i++){
+		 mulRec += $("input:checkbox:checked")[i].value;
+		}
+		if (size == 3){
+			if ($("input:checkbox:checked")[0].value == "A" && $("input:checkbox:checked")[1].value == "B" && $("input:checkbox:checked")[2].value == "D"){
+				 tScore ++;
+			}
+		}
+		setTimeout(function(){showAnswer(6);},500);
+		return false;
+	}else if (child.length == 0){
 		var gender = document.getElementsByName("Gender")[0].value;
 		var faculty = document.getElementsByName("Faculty")[0].value;
 		var age = document.getElementsByName("Age")[0].value;
@@ -141,8 +163,7 @@ function toggle(t){
 		    modifyTitle(tScore);
         	result(tScore);
     	}else{
-    		temp =t;
-        	setTimeout(function(){showAnswer(temp - 1);},500);
+        	setTimeout(function(){showAnswer(t - 1);},500);
     	}
     }
 }

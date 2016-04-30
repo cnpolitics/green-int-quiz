@@ -205,10 +205,10 @@
                    
                     <ul class="list-group  js_group">
                         <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0A" />
+                            <input name="g" type="radio" class="" value="1A" />
                             A. CO2总排放量为0</li>
                         <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1B" />
+                            <input name="g" type="radio" class="" value="0B" />
                             B. 酸性碳排放物与碱性碳排放物中和</li>
                         <li class="list-group-item" onclick="return toggle(this);">
                             <input name="g" type="radio" class="" value="0C" />
@@ -246,10 +246,10 @@
                             <input name="g" type="radio" class="" value="0A" />
                             A. 处女座的黄道吉日</li>
                         <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1B" />
+                            <input name="g" type="radio" class="" value="0B" />
                             B. 太阳和月球相互作用力引起的当日地球自转轻微偏转</li>
                         <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0C" />
+                            <input name="g" type="radio" class="" value="1C" />
                             C.​人类对资源的索取超出本年度生态可承载指标的日子</li>
                         <li class="list-group-item" onclick="return toggle(this);">
                             <input name="g" type="radio" class="" value="0D" />
@@ -282,10 +282,10 @@
                    
                     <ul class="list-group  js_group">
                         <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0A" />
+                            <input name="g" type="radio" class="" value="1A" />
                             A. 大包装的商品</li>
                         <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="1B" />
+                            <input name="g" type="radio" class="" value="0B" />
                             B. 小包装的商品</li>
                         <li class="list-group-item" onclick="return toggle(this);">
                             <input name="g" type="radio" class="" value="0C" />
@@ -309,7 +309,7 @@
                 
                                                 <!-- E panel-body -->
                 <div id="panel2" class="panel-body js_answer" style="display:none;  background:#fbfcf7">
-                    <form style="background:#fbfcf7;" action="#" method="POST">
+                    <form style="background:#fbfcf7;" action="#" method="POST" id="mul">
                     <a name="result" href="javascript:void(0)"></a>
                     <div>
                         <a href="javascript:void(0)"  name="1"><span class="icon2"><img src="asserts/box2.png"></span> </a>
@@ -320,22 +320,21 @@
                     
                    
                     <ul class="list-group  js_group">
-                        <li class="list-group-item" onclick="selected(this);">
-                            <input name="g" type="radio" class="" value="0A" />
+                        <li class="list-group-item" >
+                            <input name="g" type="checkbox" value="A" />
                             A. 过度捕捞</li>
-                        <li class="list-group-item" onclick="selected(this);">
-                            <input name="g" type="radio" class="" value="1B" />
+                        <li class="list-group-item" >
+                            <input name="g" type="checkbox" value="B" />
                             B. 生物多样性减弱、物种资源衰退</li>
-                        <li class="list-group-item" onclick="selected(this);">
-                            <input name="g" type="radio" class="" value="0C" />
+                        <li class="list-group-item" >
+                            <input name="g" type="checkbox"  value="C" />
                             C. 近海水母泛滥成灾</li>
-                        <li class="list-group-item" onclick="selected(this);">
-                            <input name="g" type="radio" class="" value="0D" />
+                        <li class="list-group-item" >
+                            <input name="g" type="checkbox" value="D" />
                             D. 废弃物污染、威胁水质安全</li>
                         <br>
-                        <li class="list-group-item" onclick="return toggle(this);">
-                            <input name="g" type="radio" class="" value="0D" />
-                            确认</li>
+                        <li class="list-group-item">
+                            <input name="g" class="submit" type="submit" value="确认" onclick="return toggle(this);"/></li>
                     </ul>
                     </form>
                 </div>
@@ -345,7 +344,7 @@
 						废弃物污染和水质安全的降低都是远洋渔业可能造成的环境威胁。
 						“东海无鱼”的水域荒漠化现象并不是危言耸听。
 						</p>
-						<button class="popup-btn" onclick="return showNext(this);" value="7">下一题</button>
+						<button class="popup-btn" onclick="return showNext(this);" value="7">完成</button>
 					</div>
 				</div>
                 <!-- Question End -->
@@ -405,40 +404,33 @@
                         <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
                 </div>
                 <h1 class="bold">
-                     太棒了，你就是我们要找的人！你的答案全部正确！</h1>
+                     恭喜！全部正确！</h1>
                 <hr>
                 <dl>
-                    <dt>看来你对读者的心理有天生的洞察力，分分钟打造出10万＋的爆款文章。</dt>
+                <dt>你获得了“绿色先锋”称号！</dt>
                     <dd>
-                        <p>考虑到我们碗里来吧！在
-                        <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>
-                        中回复“编辑”，查看我们的招募启事。</p>
+                        <p>你的绿商超群，可以考虑加入可道和政见，成为我们的观察员哦！</p>
                     </dd>
                 </dl>
+                <button onclick="location.href=''" class="result-btn">
+                            再玩一次
+                </button>
                 <button href="javascript:void(0)"  onclick="$(&#39;#mcover&#39;).show()" class="result-btn">
                             邀请小伙伴
                 </button>
-                                <br>
-                <div id="copy">
-        			<p class="text-center">
-            			<a href="http://cnpolitics.org" style="color: #000; font-weight: bold;font-size: 15px;">&copy; 政见CNPolitics</a>
-        			</p>
-    			</div> 
-
             </div>
+            
             <div id="panel3" class="panel-body js_result" data-id="7" style="display: none;">
                 <div>
                         <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
                 </div>
                 <h1 class="bold">
-                    很不错了！你答对了7题。</h1>
+                    很不错了！你答对了6题。</h1>
                 <hr>
                 <dl>
-                    <dt>虽然距离成为政见的主编还差那么一点，但你对传播规律和读者心理的洞察还是让我们非常佩服。快分享到朋友圈炫耀一下吧！</dt>
+                    <dt>你获得了“绿色先锋”称号！</dt>
                     <dd>
-                <p>想知道自己哪道题错了，在
-                <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>
-                中回复“答案”即可。</p>
+                <p>你的绿商超群，可以考虑加入可道和政见，成为我们的观察员哦！</p>
                     </dd>
                 </dl>
                 <button onclick="location.href=''" class="result-btn">
@@ -461,14 +453,12 @@
                         <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
                 </div>
                 <h1 class="bold">
-                    很不错了！你答对了6题。</h1>
+                    很不错了！你答对了5题。</h1>
                 <hr>
                 <dl>
-                    <dt>虽然距离成为政见的主编还差那么一点，但你对传播规律和读者心理的洞察还是让我们非常佩服。快分享到朋友圈炫耀一下吧！</dt>
+                    <dt>你获得了“绿色卫士”称号！</dt>
                     <dd>
-                <p>想知道自己哪道题错了，在
-                <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>
-                中回复“答案”即可。</p>
+                <p>不错哦，快邀请小伙伴一起答题，让友谊的小船更加坚固！</p>
                     </dd>
                 </dl>
                 <button onclick="location.href=''" class="result-btn">
@@ -491,14 +481,12 @@
                         <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
                 </div>
                 <h1 class="bold">
-                    只答对了5题，看来还得加把劲啦！</h1>
+                    很不错了！你答对了4题。</h1>
                 <hr>
                 <dl>
-                    <dt>以后多留意我们文章的阅读数，积累感觉，下次再战吧！</dt>
+                    <dt>你获得了“绿色卫士”称号！</dt>
                     <dd>
-                <p>想知道自己哪道题错了，在
-                <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>
-                中回复“答案”即可。</p>
+                <p>不错哦，快邀请小伙伴一起答题，让友谊的小船更加坚固！</p>
                     </dd>
                 </dl>
                 <button onclick="location.href=''" class="result-btn">
@@ -520,10 +508,8 @@
                         <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
                 </div>
                 <h1 class="bold">
-                    只答对了4题，看来还得加把劲啦！</h1>
-                <p>想知道自己哪道题错了，在
-                <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>
-                中回复“答案”即可。</p>
+                    只答对了3题，看来还得加把劲啦！</h1>
+                <p>不用放狗搜啦，快关注可道和政见涨涨姿势吧！</p>
                 <button onclick="location.href=''" class="result-btn">
                             再玩一次
                 </button>
@@ -543,10 +529,8 @@
                         <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
                 </div>
                 <h2 class="bold">
-                    只答对了3题，看来还得加把劲啦！</h2>
-                <p>想知道自己哪道题错了，在
-                <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>
-                中回复“答案”即可。</p>
+                    只答对了2题，看来还得加把劲啦！</h2>
+                <p>不用放狗搜啦，快关注可道和政见涨涨姿势吧！</p>
                 <button onclick="location.href=''" class="result-btn">
                             再玩一次
                 </button>
@@ -565,29 +549,8 @@
                 <div>
                         <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
                 </div>
-                <h1 class="bold">只答对了2题，看来还得加把劲啦！</h1>
-                <p>想知道自己哪道题错了，在</p><a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd"政见CNPolitics公号（微信号：cnpolitics2011）</a><p>中回复“答案”即可。</p>
-                <button onclick="location.href=''" class="result-btn">
-                            再玩一次
-                </button>
-                <button href="javascript:void(0)"  onclick="$(&#39;#mcover&#39;).show()" class="result-btn">
-                            邀请小伙伴
-                </button>
-                <br>
-                                <div id="copy">
-        			<p class="text-center">
-            			<a href="http://cnpolitics.org" style="color: #000; font-weight: bold;font-size: 15px;">&copy; 政见CNPolitics</a>
-        			</p>
-    			</div> 
-            </div>
-            <div id="panel3" class="panel-body js_result" data-id="1" style="display: none;">
-                <div>
-                        <a href="javascript:void(0)" name="1"><span class="icon3"><img src="asserts/box3.png"></span> </a>
-                </div>
                 <h1 class="bold">只答对了1题，看来还得加把劲啦！</h1>
-                                <p>想知道自己哪道题错了，在
-                <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>
-                中回复“答案”即可。</p>
+                <p>不用放狗搜啦，快关注可道和政见涨涨姿势吧！</p>
                 <button onclick="location.href=''" class="result-btn">
                             再玩一次
                 </button>
@@ -603,14 +566,11 @@
             </div>
             <div id="panel3" class="panel-body js_result" data-id="0" style="display: none;">
                 <h1 class="bold">
-                    大神，请收下我们的膝盖！</h1>
+                    一题都没有答对！</h1>
                 <hr>
                 <dl>
-                    <dt>因为你居然完美避开了所有正确答案！实乃百年不遇之奇才！</dt>
-                    <dd>
-                        <p>
-                            在 <a href="http://mp.weixin.qq.com/s?__biz=MzI3MDE0NzI0MA==&mid=402752827&idx=1&sn=cf86a45ebeb368701d312d5273f940ba#rd">政见CNPolitics公号（微信号：cnpolitics2011）</a>中回复“答案”即可查看正确答案。</p>
-                    </dd>
+                    <dt>不用放狗搜啦，快关注可道和政见涨涨姿势吧！</dt>
+                    
                 </dl>
                 <button onclick="location.href=''" class="result-btn">
                             再玩一次
