@@ -134,7 +134,7 @@ function toggle(t){
 		var faculty = document.getElementsByName("Faculty")[0].value;
 		var age = document.getElementsByName("Age")[0].value;
 		if (gender == "" | faculty =="" | age == ""){
-			alert("看结果前，请完善您的个人信息");
+			alert("看结果前，请先完善您的个人信息");
 		}else {
 			push();
 		
