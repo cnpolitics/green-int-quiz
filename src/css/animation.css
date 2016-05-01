@@ -8,73 +8,31 @@
 /* Chrome, Safari, Opera */
 @-webkit-keyframes appear {
     from {	
-    -webkit-transform: scale(0) rotate(720deg);
-	-moz-transform: scale(0) rotate(720deg);
-	-ms-transform: scale(0) rotate(720deg);
-	transform: scale(0) rotate(720deg);
+    -webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
 	opacity: 0;}
     to {
-	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
 	opacity: 1;}
 }
 
 /* Standard syntax */
 @keyframes appear {
     from {
-	-webkit-transform: scale(0) rotate(720deg);
-	-moz-transform: scale(0) rotate(720deg);
-	-ms-transform: scale(0) rotate(720deg);
-	transform: scale(0) rotate(720deg);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
 	opacity: 0;}
     to {
-	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
 	opacity: 1;}
-}
-
-.disappearAnimation{
-    -webkit-animation-name: disappear; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
-    animation-name: disappear;
-    animation-duration: 1.5s;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes disappear{
-    from {	
-    	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
-	opacity: 1;
-	}
-    to {    -webkit-transform: scale(0) rotate(720deg);
-	-moz-transform: scale(0) rotate(720deg);
-	-ms-transform: scale(0) rotate(720deg);
-	transform: scale(0) rotate(720deg);
-	opacity: 0;
-	}
-}
-
-/* Standard syntax */
-@keyframes disappear {
-    from {
-    -webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
-	opacity: 1;
-	}
-    to {
-	-webkit-transform: scale(0) rotate(720deg);
-	-moz-transform: scale(0) rotate(720deg);
-	-ms-transform: scale(0) rotate(720deg);
-	transform: scale(0) rotate(720deg);
-	opacity: 0;
-	}
 }
