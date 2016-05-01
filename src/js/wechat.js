@@ -22,13 +22,13 @@ function recordscore(t){
 
 function modifyTitle(tScore){
 	switch (tScore){
-	  case 8:
-	  		document.title = "新媒体主编资格考，我竟然全做对了，看来我会是下一任主编了！你也来试试吧！";
+	  case 7:
+	  		document.title = "我的绿商测试全做对了,获得了“绿色卫士”称号!";
 	  		break;
 	  case 0:
-	  		document.title = "新媒体主编资格考，我居然一题都没对，也是醉了，你来跟我避避谁的分低?";
+	  		document.title = "绿商测试，我居然一题都没对，也是醉了，你来跟我比比谁的分低?";
 	  		break;
 	  default:
-	  		document.title = "新媒体主编资格考，我做对了" + tScore + "题，你也来挑战一下吧，能不能超过我？";
+	  		document.title = "绿商测试，我做对了" + tScore + "题，你也来挑战一下吧，能不能超过我？";
 	}
 }
