@@ -7,6 +7,7 @@ function report(link, action_type){
 	var report_url = 'report.php?' + jQuery.param( query_obj );
 	$.ajax({ url: report_url, type: 'POST', timeout: 2000})
 }
+
 function share_scene(link, scene_type){
 	var parse_link = parseUrl(link);
 	if(parse_link == null){	  return link;	}
