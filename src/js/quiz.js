@@ -81,7 +81,7 @@ function push(){
 
     // Fire off the request to /form.php
     request = $.ajax({
-        url: "http://zwen668.com/git/foolsDayQuiz/src/php/post.php",
+        url: "http://zwen668.com/green-int-quiz/src/php/post.php",
         type: "post",
         data: serializedData
     });
